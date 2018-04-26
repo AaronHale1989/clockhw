@@ -1,0 +1,17 @@
+#clock {
+	border:2px solid black;
+	height:100px;
+	width:400px;
+	margin-left:30%;
+	margin-right:30%;
+	margin-top:250px;
+
+
+}
+
+h1 {
+	top:30px;
+	display:inline;
+	position:relative;
+	left:130px;
+}
