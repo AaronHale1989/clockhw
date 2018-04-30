@@ -37,27 +37,21 @@ setInterval(function(){
 
 	var hours = date.getHours()
 	var minutes = date.getMinutes()
-		if(hours < 10 && minutes < 10){
-		body.style.backgroundColor = "#" + "0" + hours  + "0" + minutes;
-	}else{
-		body.style.backgroundColor = "#" + hours + minutes;
-	}
-
-
-	// var minutes = date.getMinutes()
-	// if(minutes < 10 && seconds < 10){
-	// 	body.style.backgroundColor = "#" + "0" + minutes + "0" + seconds + ":";
-	// }else{
-	// 	body.style.backgroundColor = "#" + minutes + seconds + ":";
-	// }
-
-
 	var seconds = date.getSeconds()
-	if(seconds < 10){
-		body.style.backgroundColor = "#" + "0" + seconds 
-	}else{
-		body.style.backgroundColor = "#" + seconds 
+
+	if(hours < 10){
+		hours = "0" + hours
 	}
+	if(minutes < 10){
+		minutes = "0" + minutes
+	}
+	if(seconds < 10){
+		seconds = "0" + seconds
+	}
+
+
+	body.style.backgroundColor = "#" + hours + minutes + seconds;
+
 },1000)
 
 
